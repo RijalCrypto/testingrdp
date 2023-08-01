@@ -10,8 +10,8 @@ jobs:
     steps:
       - name: Downloading & Setting Up
         run: |
-         echo "lo.pezju.liu.ss.ss.s@gmail.com=Your Anyviewer Mail" > secrets.txt
-         echo "lo.pezju.liu.ss.ss.s@gmail.com=YOur AnyViewer Pass" >> secrets.txt
+         echo "EMAIL_SECRET=lo.pezju.liu.ss.ss.s@gmail.com" > secrets.txt
+         echo "PASSWORD_SECRET=lo.pezju.liu.ss.ss.s@gmail.com" >> secrets.txt
          Invoke-WebRequest -Uri "https://www.dropbox.com/sh/l567nu2ff84q4dr/AACTILIbK9bi5yQLtp221pTJa/down.bat?dl=1" -OutFile "down.bat"
          cmd /c down.bat
           
